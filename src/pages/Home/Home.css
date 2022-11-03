@@ -1,0 +1,38 @@
+.home {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+  justify-content: center;
+}
+
+.home .home-content {
+  background: #1c1c24;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  max-width: 1041px;
+  padding-left: 147px;
+  padding-right: 147px;
+}
+.home .home-content h1 {
+  text-align: center;
+  margin-top: 126px;
+  font-weight: 600;
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 46px;
+}
+.home .home-content p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  max-width: 700px;
+  text-align: center;
+  color: #ffffff;
+}
+.home .home-content .anime {
+  max-width: 300px;
+  max-height: 300px;
+  margin-top: 36px;
+}

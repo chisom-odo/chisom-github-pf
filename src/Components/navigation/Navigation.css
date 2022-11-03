@@ -1,0 +1,22 @@
+.nav {
+  max-width: 279px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 17px;
+  background: #1c1c24;
+  border-radius: 8px;
+}
+.nav .nav-links {
+  margin-top: 139px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.nav .nav-links .homeIcon {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
