@@ -3,15 +3,54 @@
   flex-direction: row;
   gap: 36px;
   justify-content: center;
+  width:90%;
+  margin: auto;
+  border: 1px solid red;
 }
 
 .repos .repos-content {
+  /* height: 100%; */
   background: #1c1c24;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 8px;
+  width: 70%;
+  border: 1px solid red;
   max-width: 1041px;
   padding-left: 147px;
   padding-right: 147px;
+  padding-bottom: 3rem;
+}
+
+.repos .repos-content .repo-list {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  max-width: 838px;
+  gap: 20px;
+  border: 1px solid red;
+}
+
+.repos .repos-content h3 {
+  margin-top: 47px;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
+@media only screen and (max-width:1100px){
+  .repos .repos-content{
+    padding:0 60px;
+  }
+  
+  .repos .repos-content .repo-list{
+    grid-template-columns: repeat(1,1fr);
+    
+    
+  }
+
+  .nav{
+    display: none;
+  }
 }

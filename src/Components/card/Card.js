@@ -1,24 +1,36 @@
 import React from "react";
+import "./Card.css";
+import moment from "moment/moment";
 import { Link } from "react-router-dom";
 
-const Card = () => {
+const Card = ({ repos }) => {
   return (
     <>
-      <div className="card">
-        <div className="card-desc">
-          <div className="image">
-            <img src="" className="avatar" />
+      {repos.map((item) => {
+        
+        let date = moment(item.created_at).format('MMMM Do YYYY');
+        return (
+        
+          <div className="card" key={item.id}>
+            <div className="image">
+              <img src="https://avatars.githubusercontent.com/u/108188979?v=4" />
+              <span>
+                <h3>chisom69264536</h3>
+
+                <p>{item.name}</p>
+              </span>
+            </div>
+
+            <p>
+              The repository was created on {date} by chisom69264536
+            </p>
+            <a href={item.html_url} target = "_blank">
+            <button>View Repo</button>
+            </a>
           </div>
-
-          <h3 className="card-title">chisom69264536</h3>
-          <h4>ChisomOdoE-Altschool-Assg2</h4>
-        </div>
-
-        <p>The repository was created on 20th June 2022 by chisom69264536 </p>
-        <Link to="">
-          <button>View Repo</button>
-        </Link>
-      </div>
+          
+        );
+      })}
     </>
   );
 };
