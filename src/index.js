@@ -1,12 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { HelmetProvider } from "react-helmet-async";
+import { ErrorBoundary } from "./ErrorBoundary";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <ErrorBoundary>
+      <HelmetProvider>
+        <App />
+      </HelmetProvider>
+    </ErrorBoundary>
   </React.StrictMode>
 );
-
-

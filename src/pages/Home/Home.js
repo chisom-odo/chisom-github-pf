@@ -1,9 +1,9 @@
 import React from "react";
 import "./Home.css";
-import { Link } from "react-router-dom";
 import Lottie from "react-lottie";
 import meditatingMan from "../../assets/125746-meditating-man.json";
 import Navigation from "../../Components/navigation/Navigation";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const defaultOptions = {
@@ -16,6 +16,15 @@ const Home = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>Home</title>
+        <meta
+          name="description"
+          content="Home Page of Chisom Odo Esther"
+        />
+        <link rel="canonical" href="/" />
+      </Helmet>
+
       <div className="home">
         <Navigation />
 
@@ -32,7 +41,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <Link to="/error">error</Link> */}
     </>
   );
 };

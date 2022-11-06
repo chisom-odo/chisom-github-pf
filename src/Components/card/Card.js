@@ -1,7 +1,6 @@
 import React from "react";
 import "./Card.css";
 import moment from "moment/moment";
-import { Link } from "react-router-dom";
 
 const Card = ({ repos }) => {
   return (
@@ -13,7 +12,7 @@ const Card = ({ repos }) => {
         
           <div className="card" key={item.id}>
             <div className="image">
-              <img src="https://avatars.githubusercontent.com/u/108188979?v=4" />
+              <img src="https://avatars.githubusercontent.com/u/108188979?v=4" alt="avatar" />
               <span>
                 <h3>chisom69264536</h3>
 
@@ -24,7 +23,7 @@ const Card = ({ repos }) => {
             <p>
               The repository was created on {date} by chisom69264536
             </p>
-            <a href={item.html_url} target = "_blank">
+            <a href={item.html_url} target = "_blank" rel= "noreferrer">
             <button>View Repo</button>
             </a>
           </div>

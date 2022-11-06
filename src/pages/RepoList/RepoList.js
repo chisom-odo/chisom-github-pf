@@ -6,6 +6,7 @@ import axios from "axios";
 import { UsersFooter } from "../../Components/UsersFooter";
 import { getPageNumber } from "../../utils/getPageNumber";
 import { useSearchParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const RepoList = () => {
   const [data, setData] = useState([]);
@@ -60,6 +61,15 @@ const RepoList = () => {
 
   return (
     <>
+    <Helmet>
+        <title>RepoList</title>
+        <meta
+          name="description"
+          content="RepoList of Chisom Odo Esther"
+        />
+        <link rel="canonical" href="/" />
+      </Helmet>
+
       <div className="repos">
         <Navigation />
         <div className="repos-content">
