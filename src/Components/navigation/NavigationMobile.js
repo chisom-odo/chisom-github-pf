@@ -1,24 +1,24 @@
 import React from "react";
-import "./Navigation.css";
+import "./NavigationMobile.css"
 import { Icon } from "@iconify/react";
 import { NavLink } from "react-router-dom";
 
-const Navigation = () => {
+const NavigationMobile = () => {
   return (
     <>
-      <div className="nav">
-        <div className="nav-links">
+      <div className="nav-mobile">
+        <div className="nav-links-mobile">
           <>
             <NavLink
               style={({ isActive }) => ({
-                background: isActive ? "#2B2F3B" : "",
+                color: isActive ? "#3da8b4" : "",
                 padding: isActive ? "8px" : "",
                 borderRadius: isActive ? " 4px" : "",
               })}
               to="/"
               className="homeIcon"
             >
-              <Icon icon="ant-design:home-filled" width={20} />
+              {/* <Icon icon="ant-design:home-filled" width={20} /> */}
               <h3> Home </h3>
             </NavLink>
           </>
@@ -26,14 +26,14 @@ const Navigation = () => {
           <>
             <NavLink
               style={({ isActive }) => ({
-                background: isActive ? "#2B2F3B" : "",
+                color: isActive ? "#3da8b4" : "",
                 padding: isActive ? "8px" : "",
                 borderRadius: isActive ? " 4px" : "",
               })}
               to="/repoList"
               className="homeIcon"
             >
-              <Icon icon="mdi:source-repository" width={20} />
+              {/* <Icon icon="mdi:source-repository" width={20} /> */}
               <h3> RepoList </h3>
             </NavLink>
           </>
@@ -43,4 +43,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default NavigationMobile;

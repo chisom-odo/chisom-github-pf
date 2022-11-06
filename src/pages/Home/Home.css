@@ -3,7 +3,7 @@
   flex-direction: row;
   gap: 36px;
   justify-content: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .home .home-content {
@@ -15,13 +15,14 @@
   max-width: 1041px;
   padding-left: 147px;
   padding-right: 147px;
+  /* border: 1px solid red; */
 }
 .home .home-content h1 {
   text-align: center;
   margin-top: 126px;
   font-weight: 600;
   font-size: 40px;
-  color: #ffffff;
+  color: #3da8b4;
   margin-bottom: 46px;
 }
 .home .home-content p {
@@ -37,3 +38,9 @@
   max-height: 300px;
   margin-top: 36px;
 }
+
+
+.home .home-content p span.imp{
+  color: #3da8b4;
+}
+

@@ -7,7 +7,7 @@
   padding: 3rem;
   background: #1c1c24;
   border-radius: 8px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 .nav .nav-links {
   margin-top: 139px;
@@ -23,7 +23,7 @@
 }
 
 @media only screen and (max-width:768px){
-  .nav{
+  .nav-mobile{
     display: none;
   }
 }
