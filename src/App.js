@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import Error from "./pages/Error/Error";
 import RepoList from "./pages/RepoList/RepoList";
 import { ErrorBoundary } from "./ErrorBoundary";
+import Repo from "./pages/Repo/Repo";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="*" exact element={<Error />} />
         <Route path="/repoList" exact element={<RepoList />} />
         <Route path="/error-test" element={<ErrorBoundary />} />
+        <Route path="/repos/:repoId" element={<Repo />} />
       </Routes>
     </Router>
   );
