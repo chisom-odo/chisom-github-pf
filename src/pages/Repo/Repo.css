@@ -1,0 +1,26 @@
+.repo--details {
+  background: rgba(28, 28, 36, 0.86);
+  backdrop-filter: blur(6px);
+  width: 65%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 9rem;
+}
+
+.repo--details h3{
+    color: #3DA8B4;
+   font-size: 1.2rem;
+}
+.s{
+    color:#fff;
+    font-size:1rem;
+}
+.repo-btn{
+    cursor: pointer;
+    padding: 0.2rem 1rem;
+    margin-top: 3rem;
+    border-radius: 32px;
+}
